@@ -69,6 +69,7 @@ const GameBoard = () => {
 
 		if (game.playerHealth <= 0 || game.playerMoves <= 0) {
 			setResult("Sorry you have lost!")
+			alert("Sorry you have lost!")
 		}
 	}, [game.playerXPos, game.playerYPos, game.playerHealth, game.playerMoves]);
 
